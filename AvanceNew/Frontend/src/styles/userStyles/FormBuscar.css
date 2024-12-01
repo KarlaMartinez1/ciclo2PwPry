@@ -1,0 +1,117 @@
+.buscar-amigo {
+  margin: 2rem auto;
+  width: 90%; /* Reduce un poco el ancho para mejor centrado */
+  max-width: 1200px; /* Define un ancho máximo */
+  background-color: #ffffff73;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem; /* Añade espacio interno */
+}
+
+.buscar-amigo h2 {
+  text-align: center;
+  color: #776161;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Formulario */
+.formulario {
+  margin-top:50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  gap: 1.5rem;
+}
+
+/* Foto mascota */
+.foto-mascota {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.foto-mascota img {
+  width: 250px; /* Fija un ancho específico */
+  height: 265px; /* Fija un alto específico */
+  object-fit: cover; /*Asegura que la imagen se recorte proporcionalmente y llene el contenedor sin deformarse. */
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* El contenedor de la imagen (img) 
+ahora tiene un tamaño explícito (20px x 2px), 
+asegurando que la imagen cargada no exceda esas dimensiones. */
+
+.foto-mascota input {
+  display: none; /* Oculta el input de archivo */
+}
+/* Botón para subir foto */
+.foto-mascota button {
+  background-color: #f4a261;
+  color: #f5dddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* .foto-mascota button:hover {
+  background-color: #e76f51;
+} */
+
+/* Campos de entrada */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.campo label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.campo input, .campo textarea, .campo select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.campo, textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Opciones organizadas */
+.campo-opciones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Botón de envío */
+button {
+  grid-column: span 1; /* Ocupa ambas columnas */
+  padding: 20px;
+  margin-top: 40px;
+  margin-right: 50%;
+  background-color: #f4a261;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
